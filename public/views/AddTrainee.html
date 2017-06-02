@@ -1,0 +1,64 @@
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 toppad" >
+    <div class="panel panel-info" style="margin-top: 20px">
+        <div class="panel-heading">
+            <h3>Add Trainee</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class=" col-md-12 col-lg-12 ">
+                    <form id="userProfile" name="trainee_form" class="form-horizontal" ng-controller="homeController" role="form">
+                        <div class="form-group">
+                            <label for="batch" class="col-md-3 control-label">Batch</label>
+                            <div class="col-md-9">
+                                <select class="form-control" ng-model="user.batch">
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="Lamb">Lamb</option>
+                                    <option value="Java">Java</option>
+                                    <option value="DotNet">DotNet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-md-3 control-label">First Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" ng-model="user.firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" ng-model="user.lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-md-3 control-label">Email</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" ng-model="user.email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-md-3 control-label">Phone</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" ng-model="user.phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-md-3 control-label">Client Call</label>
+                            <div class="col-md-9">
+                                <textarea rows="3" class="form-control" ng-model="user.clientcall"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Button -->
+                            <div class="col-md-offset-3 col-md-9">
+                                <button id="btn-signup" ng-click="AddTranee()" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

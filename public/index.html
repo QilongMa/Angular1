@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div>
+    <ng-view></ng-view>
+</div>
+<script src="JS/jquery-3.2.1.js"></script>
+<script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+<script src="script.js"></script>
+<script src="app-services/user.service.js"></script>
+<script src="app-services/authentication.js"></script>
+<script src="controllers/home.controller.js"></script>
+<script src="controllers/signIn.controller.js"></script>
+<script src="controllers/test.controller.js"></script>
+</body>
+</html>

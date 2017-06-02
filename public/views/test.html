@@ -1,0 +1,26 @@
+<div ng-controller="testController" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 toppad" >
+    <div class="panel panel-info" style="margin-top: 20px" >
+        <div class="panel-heading">
+            <h3>Monitor Trainee</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="table col-md-12 col-lg-12 ">
+                    <div class="row">
+                            <div class="col-md-12 form-control" style="font:20px bold;">
+                                <div class="col-md-2">Batch</div>
+                                <div class="col-md-2">First Name</div>
+                                <div class="col-md-2">Last Name</div>
+                                <div class="col-md-2">Email</div>
+                                <div class="col-md-2">Phone</div>
+                                <!--<div class="col-md-2">Client Call</div>-->
+                            </div>
+                        <div class="row">
+                                <detail ng-repeat="user in users" t-user = "user"></detail>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

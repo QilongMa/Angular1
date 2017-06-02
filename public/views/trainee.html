@@ -1,0 +1,51 @@
+<div class='col-md-12'>
+        <div class="form-control" ng-click="toggle()">
+            <div class="row" >
+                <div class='col-md-2' >{{user.batch}}</div>
+                <div class='col-md-2' >{{user.firstname}}</div>
+                <div class='col-md-2'>{{user.lastname}}</div>
+                <div class='col-md-2' >{{user.email}}</div>
+                <div class='col-md-2' >{{user.phone}}</div>
+                <!--<div class='col-md-2'>{{user.clientcall}}</div>-->
+            </div>
+
+        </div>
+
+
+    <table class="table" ng-show="showme">
+        <thead>
+        </thead>
+        <tbody>
+
+        <tr class="row">
+            <td class="col-md-3">First Name:</td>
+            <td clsss="col-md-3">{{user.firstname}}</td>
+        </tr>
+        <tr class="row">
+            <td class="col-md-3">Last Name:</td>
+            <td clsss="col-md-3">{{user.lastname}}</td>
+        </tr>
+        <tr class="row">
+            <td class="col-md-3">Email:</td>
+            <td clsss="col-md-3">{{user.email}}</td>
+        </tr>
+        <tr class="row">
+            <td class="col-md-3">Phone:</td>
+            <td clsss="col-md-3">{{user.phone}}</td>
+        </tr>
+        <tr class="row">
+            <td class="col-md-3">Batch:</td>
+            <td clsss="col-md-3">{{user.batch}}</td>
+        </tr>
+        <tr class="row">
+            <td class="col-md-3"><b>Clients</b></td>
+            <td class="col-md-3"><b>Interview Date</b></td>
+        </tr>
+        <tr class="row" ng-repeat="call in user.clientcall">
+            <td class="col-md-3">{{call.client}}</td>
+            <td class="col-md-3">{{call.call_date}}</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
